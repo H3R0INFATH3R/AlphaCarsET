@@ -72,6 +72,71 @@ section{
     background:var(--red);
 }
 
+.sell:hover{
+    background:var(--red);
+}
+
+.sell-body{
+    height: auto;
+    background:var(--blue);
+}
+
+.sell-input{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 158px auto;
+    font-size: 20px;
+    background:rgb(255, 255, 255);
+    color: var(--black);
+    border-radius: 2rem;
+    width: 90%;
+    height: 100%;
+    font-size: 14px;
+}
+
+.sell-description{
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+
+.sell-image{
+    width: 280px;
+    border-radius: 2rem;
+    margin: auto;
+}
+
+.sell-upload{
+    background: var(--black);
+    color: var(--white);
+    border-radius: .5rem;
+    font-size: 1.7rem;
+    width: 100%;
+    height: 7%;
+}
+
+.sell-upload:hover{
+    background: var(--red);
+}
+
+.sell-select{
+    font-size: 1.8rem;
+    margin-bottom: 22px;
+    
+}
+
+#textarea-sell{
+    background-color: rgb(211, 211, 211);
+    padding: 1rem;
+    border: 1px solid gray;
+    border-radius: 1.5rem;
+    width: 80%;
+    height: 12%;
+    column-count: 3;
+}
+
 .alpha-logo{
     width: 190px;
 }
@@ -214,13 +279,12 @@ section{
     padding-top: 10rem;
     text-align: center;
     overflow-x: hidden;
-    background-image: url(../image/desktop_header.jpg);
+    background-image: url(../image/back-header.png);
     position: relative;
-    /* top: rem; */
-    /* background-repeat: repeat-x; */
-    height: 898px;
+    height: 920px;
     width: 100%;
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: repeat;
     background-position-y: center;
     background-position-x:center;
 }
@@ -235,7 +299,7 @@ section{
 }
 
 .home img{
-    width:100%;
+    width:60%;
     margin:1rem 0;
 }
 
@@ -284,7 +348,7 @@ section{
 }
 
 .icons-container .icons:hover i{
-    background:var(--white);
+    background: var(--white);
 }
 
 .icons-container .icons:hover .content h3{
@@ -304,7 +368,7 @@ section{
 }
 
 .vehicles .vehicles-slider .box img{
-    width:100%;
+    width: 100%;
     transform: scale(.8);
     opacity: .5;
 }
@@ -330,8 +394,8 @@ section{
 
 .vehicles .vehicles-slider .box .content .price{
     font-size: 2.2rem;
-    color:var(--yellow);
-    padding:1rem 0;
+    color: var(--yellow);
+    padding: 1rem 0;
     font-weight: bolder;
 }
 
@@ -351,8 +415,8 @@ section{
 
 .vehicles .vehicles-slider .box .content span{
     font-size: 1rem;
-    color:var(--yellow);
-    padding:0 .5rem;
+    color: var(--yellow);
+    padding: .5rem;
 }
 
 .swiper-pagination-bullet-active{
@@ -362,7 +426,7 @@ section{
 .services .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:1.5rem;
+    gap: 1.5rem;
 }
 
 .services .box-container .box{
@@ -447,8 +511,6 @@ section{
     font-size: 2.5rem;
     color:var(--black);
 }
-
-
 
 .newsletter{
     padding:6rem 2rem;
@@ -640,7 +702,10 @@ section{
 }
 
 .car-type:hover{
-    background-color: var(--blue);
+    border: solid 0.1px;
+    border-color: #666;
+    border-radius: 3px;
+    background-color: var(--gray);
 }
 
 .type-pic{
@@ -775,8 +840,6 @@ section{
     margin-bottom: 2.5rem;
 }
 
-.compare-body
-
 .compare-heading{
     width: 100%;
     height: 1500px;
@@ -789,7 +852,6 @@ section{
     height: 100%;
     position: absolute;
     left: 0;
-    padding-top: 150px;
     text-align: center;
 }
 
@@ -798,8 +860,28 @@ section{
     height: 100%;
     position: absolute;
     right: 0;
-    padding-top: 150px;
     text-align: center;
+}
+
+.compare-list{
+    font-size: 150%;
+    list-style: none;
+}
+
+.compare-list li:nth-child(1){
+    background-color: rgb(190, 190, 190);
+}
+
+.compare-list li:nth-child(3){
+    background-color: rgb(190, 190, 190);
+}
+
+.compare-list li:nth-child(5){
+    background-color: rgb(190, 190, 190);
+}
+
+.compare-list li:nth-child(7){
+    background-color: rgb(190, 190, 190);
 }
 
 .infooo{
@@ -807,12 +889,87 @@ section{
     margin: 3rem auto;
 }
 
+.help-message{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 95px;
+}
+
+.help-message:hover{
+    width: 100px;
+    
+}
+
+.help-box-hidden{
+    position: fixed;
+    left: 20px;
+    height: 50%;
+    width: 35%;
+    background-color: white;
+    border-radius: 13px 13px 0 0;
+    border: 1px solid gray;
+}
+
+.help-box-shown{
+    bottom: 0;
+}
+
+.close-help:hover{
+    width: 22px;
+    height: 22px;
+}
+
 #car-selectee{
     border: none;
     border-radius: 45px;
     margin-top: 3rem;
+    font-size: 220%;
+    padding-left: 20px;
+    background-color: #000000;
+    color: white;
 }
 
+.man ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;  
+    column-count: 9;  
+    font-size: 2rem;
+    list-style: none;
+}
+
+.man li {
+    margin-bottom: 1.5rem;
+}
+
+.man svg {
+    width: 30%;
+}
+
+.coming-soon{
+    height: 1050px;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coming-soon h1{
+    font-size: 300%;
+}
+
+.auto-type{
+    color: var(--black);
+}
+
+.multi-column-list__link-text{
+    color: black;
+}
 
 
 @media (max-width:991px){
@@ -832,11 +989,33 @@ section{
     section{
         padding:2rem;
     }
+
     .home{
-        background-repeat: repeat-x;
-        background-color: rgb(83, 142, 237);
+        height: 600px;
     }
 
+    .man ul{
+        column-count: 5;
+    }
+
+    .compare-list{
+        font-size: 100%
+    }
+
+    #car-selectee{
+        font-size: 180%;
+    }
+
+    .sell-input{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .sell-image{
+        width: 100%;
+        border-radius: 0 0 2rem 2rem;
+    }
 }
 
 @media (max-width:768px){
@@ -899,6 +1078,14 @@ section{
         position: relative;
         left: 12px;
         bottom: 38px;
+    }
+
+    .man ul{
+        column-count: 3;
+    }
+
+    .help-message{
+        width: 15%;
     }
 
 }
